@@ -1,16 +1,22 @@
 import React from 'react';
-import { StyleSheet } from 'react-native';
+import { ScrollView, StyleSheet } from 'react-native';
 import Navbar from './components/Navbar';
 import Card from './components/Card';
+import BottomNav from './components/BottomNav';
 
 
 const App = () => {
   return (
     <>
-        {/* Navbar */}
-        <Navbar />
-        {/* Cards */}
-        <Card />
+      {/* Navbar */}
+      <Navbar />
+      <ScrollView style={{ flex:1 }}>
+          {/* Cards */}
+          <Card />
+          <Card />
+          <Card />
+      </ScrollView>
+      <BottomNav />
     </>
   );
 };
